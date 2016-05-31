@@ -1,0 +1,17 @@
+package com.test_03;
+
+public class Teacher {
+
+	private Teacher() {
+	}
+
+	private static Teacher t = null;
+
+	public static Teacher getTeacher() {
+		if (t == null) {
+			t = new Teacher();
+		}
+		return t;
+	}
+
+}
